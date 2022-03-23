@@ -7,7 +7,8 @@ from django.http import HttpResponse
 
 def projects(request):
     context = {}
-    return render (request,'projects.html',context)
+    return render (request,'projects/projects.html',context)
 
 def  project(request,pk):
-    return HttpResponse('Project Detail page')
+    context = {}
+    return render (request,'projects/single-project.html',context)
